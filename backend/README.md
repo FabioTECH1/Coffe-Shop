@@ -110,7 +110,7 @@ There are `@TODO` comments throughout the `./backend/src`. We recommend tackling
                 }
             ],
             "title": "Kunu Alaya"
-        }
+        },
       "status code": 200,
       "success": true
 }
@@ -142,7 +142,7 @@ There are `@TODO` comments throughout the `./backend/src`. We recommend tackling
                 }
             ],
             "title": "Kunu Alaya"
-        }
+        },
       "status code": 200,
       "success": true
 }
