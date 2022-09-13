@@ -85,3 +85,151 @@ There are `@TODO` comments throughout the `./backend/src`. We recommend tackling
 
 1. `./src/auth/auth.py`
 2. `./src/api.py`
+
+### Documentation (Version 1)
+
+`GET '/drinks'`
+
+- Fetches a dictionary of drinks
+- Request Arguments: None
+- Returns: An object drinks with title and their recipe
+
+```json
+{
+    "drinks": [
+        {
+            "id": 2,
+            "recipe": [
+                {
+                    "color": "brown",
+                    "parts": 1
+                },
+                {
+                    "color": "green",
+                    "parts": 1
+                }
+            ],
+            "title": "Kunu Alaya"
+        }
+      "status code": 200,
+      "success": true
+}
+```
+
+---
+
+`GET '/drinks-detail'`
+
+- Fetches a dictionary of drinks with details
+- Request Arguments: None
+- Returns: An object drinks with title, recipe and their details
+
+```json
+{
+    "drinks": [
+        {
+            "id": 2,
+            "recipe": [
+                {
+                    "color": "brown",
+                    "name": "Milk",
+                    "parts": 1
+                },
+                {
+                    "color": "green",
+                    "name": "Nuts",
+                    "parts": 1
+                }
+            ],
+            "title": "Kunu Alaya"
+        }
+      "status code": 200,
+      "success": true
+}
+```
+
+---
+
+`POST '/drinks'`
+
+- Sends a post request in order to add a new drink
+- Request Arguments:
+
+```json
+{
+  "title": "Water3",
+  "recipe": {
+    "name": "Water",
+    "color": "blue",
+    "parts": 1
+  }
+}
+```
+
+- Returns: An object of the added drinks with title and recipe
+
+```json
+{
+  "drinks": [
+    {
+      "id": 4,
+      "recipe": {
+        "color": "blue",
+        "name": "Water",
+        "parts": 1
+      },
+      "title": "Water3"
+    }
+  ],
+  "status code": 200,
+  "success": true
+}
+```
+
+---
+
+`DELETE 'drinks/${id}'`
+
+- Deletes a specified drink using the id of the question
+- Request Arguments: `id` - integer
+- Returns:
+
+```json
+{
+  "success": true,
+  "id": 2
+}
+```
+
+---
+
+`PATCH 'drinks/${id}'`
+
+- Update a specified drink using the id of the question
+- Request Arguments:
+
+```json
+{
+  "title": "Water5"
+}
+```
+
+- Returns:
+
+```json
+{
+  "drinks": [
+    {
+      "id": 4,
+      "recipe": {
+        "color": "blue",
+        "name": "Water",
+        "parts": 1
+      },
+      "title": "Water5"
+    }
+  ],
+  "status code": 200,
+  "success": true
+}
+```
