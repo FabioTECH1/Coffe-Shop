@@ -96,23 +96,24 @@ There are `@TODO` comments throughout the `./backend/src`. We recommend tackling
 
 ```json
 {
-    "drinks": [
+  "drinks": [
+    {
+      "id": 2,
+      "recipe": [
         {
-            "id": 2,
-            "recipe": [
-                {
-                    "color": "brown",
-                    "parts": 1
-                },
-                {
-                    "color": "green",
-                    "parts": 1
-                }
-            ],
-            "title": "Kunu Alaya"
+          "color": "brown",
+          "parts": 1
         },
-      "status code": 200,
-      "success": true
+        {
+          "color": "green",
+          "parts": 1
+        }
+      ],
+      "title": "Kunu Alaya"
+    }
+  ],
+  "status code": 200,
+  "success": true
 }
 ```
 
@@ -126,25 +127,26 @@ There are `@TODO` comments throughout the `./backend/src`. We recommend tackling
 
 ```json
 {
-    "drinks": [
+  "drinks": [
+    {
+      "id": 2,
+      "recipe": [
         {
-            "id": 2,
-            "recipe": [
-                {
-                    "color": "brown",
-                    "name": "Milk",
-                    "parts": 1
-                },
-                {
-                    "color": "green",
-                    "name": "Nuts",
-                    "parts": 1
-                }
-            ],
-            "title": "Kunu Alaya"
+          "color": "brown",
+          "name": "Milk",
+          "parts": 1
         },
-      "status code": 200,
-      "success": true
+        {
+          "color": "green",
+          "name": "Nuts",
+          "parts": 1
+        }
+      ],
+      "title": "Kunu Alaya"
+    }
+  ],
+  "status code": 200,
+  "success": true
 }
 ```
 
